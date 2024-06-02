@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+            <h1>WELCOME</h1>
+            {% if error %}
+            <p style="color:red;">{{ error }}</p>
+            {% endif %}
+            
+            <form method="POST" action="{{ url_for('login') }}">
+
+                <i class='bx bxs-user'></i>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                <i class='bx bxs-lock-alt' ></i>
+                <label for="password" >Password:</label>
+                
+
+                <input type="password" id="password" name="password" autocomplete="off" required>
+<br><br>
+                <input type="submit" value="Login" class="btn">
+            </form>
+            
+            
+            
+            <br><br><div class="check_box">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+
+
+            <div class="signup">
+                <p>Don't have an account?<a href="signup">Sign up</a></p>
+            </div> 
+    </div>
+</body>
+</html>

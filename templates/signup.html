@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Signup</title>
+</head>
+<body>
+    <div class="container">
+        <form method="POST" action="/login">
+            <h1>SIGN-UP</h1>
+            <div class="input">
+            <input type="text" placeholder="Username"  id="username" required>
+            <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input">
+            <input type="Password" placeholder="Password" id="password" required>
+            <i class='bx bxs-lock-alt' ></i>
+            </div>
+
+            <div class="input">
+                <input type="Password" placeholder="Confirm Password" id="confirm_password" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>    
+
+            <button type="submit" class="btn"><a href="login" style="text-decoration: none; color: #2c2b2b;">Sign up</a></button>
+            
+        </form>
+    </div>
+</body>
+</html>
